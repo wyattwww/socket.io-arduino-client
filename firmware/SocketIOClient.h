@@ -26,10 +26,8 @@
 	FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 	OTHER DEALINGS IN THE SOFTWARE.
 */
-#include "Arduino.h"
-//#include <Ethernet.h>
+
 #include "spark_wiring_tcpclient.h"
-#include "SPI.h"
 
 // Length of static data buffers
 #define DATA_BUFFER_LEN 120
