@@ -26,6 +26,9 @@
 	FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 	OTHER DEALINGS IN THE SOFTWARE.
 */
+#ifndef SOCKETIOCLIENT_H
+#define SOCKETIOCLIENT_H
+
 
 #include "spark_wiring_tcpclient.h"
 
@@ -59,3 +62,5 @@ class SocketIOClient {
 		bool waitForInput(void);
 		void eatHeader(void);
 };
+
+#endif
