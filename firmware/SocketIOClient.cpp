@@ -26,7 +26,9 @@
 	FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 	OTHER DEALINGS IN THE SOFTWARE.
 */
-#include <SocketIOClient.h>
+#include "spark_wiring_usbserial.h"
+#include "spark_wiring_string.h"
+#include "SocketIOClient.h"
 
 bool SocketIOClient::connect(char thehostname[], int theport) {
 	if (!client.connect(thehostname, theport)) return false;

@@ -27,7 +27,8 @@
 	OTHER DEALINGS IN THE SOFTWARE.
 */
 #include "Arduino.h"
-#include <Ethernet.h>
+//#include <Ethernet.h>
+#include "spark_wiring_tcpclient.h"
 #include "SPI.h"
 
 // Length of static data buffers
@@ -45,7 +46,8 @@ class SocketIOClient {
 		void send(char *data);
 	private:
         void sendHandshake(char hostname[]);
-        EthernetClient client;
+        //EthernetClient client;
+        TCPClient client;
         DataArrivedDelegate dataArrivedDelegate;
         bool readHandshake();
 		void readLine();
