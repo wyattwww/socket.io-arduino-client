@@ -2,6 +2,6 @@
   "name": "Spark-SocketIOClient",
   "author": "Wyatt Wong <wyattwong@gmail.com>",
   "license": "MIT",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Spark Library to work with websockets socket.io"
 }

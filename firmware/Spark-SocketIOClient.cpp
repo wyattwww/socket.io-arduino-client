@@ -28,7 +28,7 @@
 */
 #include "spark_wiring_usbserial.h"
 #include "spark_wiring_string.h"
-#include "SocketIOClient.h"
+#include "Spark-SocketIOClient.h"
 
 bool SocketIOClient::connect(char thehostname[], int theport) {
 	if (!client.connect(thehostname, theport)) return false;
